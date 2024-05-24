@@ -5,6 +5,7 @@
 	import Github from '$lib/assets/github.svg';
 	import Linkedin from '$lib/assets/linkedin.svg';
 	import Instagram from '$lib/assets/instagram.svg';
+	import { base } from '$app/paths';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -18,7 +19,7 @@
 		<!-- App Bar -->
 		<AppBar gridColumns='grid-cols-3' shadow='shadow-xl' slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
-				<a href="/">
+				<a href="{base}/">
 					<img
 						src={Logo}
 						alt="BioRocket Logo"
@@ -29,7 +30,7 @@
 			</svelte:fragment>
 			<svelte:fragment>
 				<div class="flex justify-center space-x-8">
-					<a href="/about-us" class="text-black big-text" 
+					<a href="{base}/about-us" class="text-black big-text" 
 					class:bg-primary-hover-token={isHovered}
 					on:mouseover={() => isHovered = true}
 					on:mouseout={() => isHovered = false}
@@ -38,14 +39,14 @@
 					>
 					OUR VISION
 					</a>
-					<a href="/sponsors" class="text-black big-text"
+					<a href="{base}/sponsors" class="text-black big-text"
 					class:bg-primary-hover-token={isHovered}
 					on:mouseover={() => isHovered= true}
 					on:mouseout={() => isHovered = false}
 					on:focus={() => isHovered = true}
 					on:blur={() => isHovered = false}
 					> ABOUT US </a>
-					<a href="/vision" class="text-black big-text"
+					<a href="{base}/vision" class="text-black big-text"
 					class:bg-primary-hover-token={isHovered}
 					on:mouseover={() => isHovered = true}
 					on:mouseout={() => isHovered = false}
