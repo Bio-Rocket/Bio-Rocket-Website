@@ -12,26 +12,22 @@
 		<h1>2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
-        <img
+        <embed
             src={Rocket}
-            alt="Rocket Logo"
             width="800"
         />
   
 		<div class="flex justify-center space-x-12 mt-4">
-			<img
+			<embed
 				src={Uofc}
-				alt="UofC Logo"
 				width="200"
 			/>
-			<img
+			<embed
 				src={Soar}
-				alt="Soar Logo"
 				width="180"
 			/>
-			<img
+			<embed
 				src={Eng}
-				alt="Eng Logo"
 				width="200"
 			/>
 		</div>
