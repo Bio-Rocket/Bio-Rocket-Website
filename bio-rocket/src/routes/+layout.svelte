@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import Logo from '$lib/assets/2BIOROCKET.svg';
+	import Logo from '$lib/assets/biorockettext.svg';
 	import Github from '$lib/assets/github.svg';
 	import Linkedin from '$lib/assets/linkedin.svg';
 	import Instagram from '$lib/assets/instagram.svg';
