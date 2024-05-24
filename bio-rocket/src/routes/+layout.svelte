@@ -37,7 +37,7 @@
 					on:focus={() => isHovered = true}
 					on:blur={() => isHovered = false}
 					>
-					OUR VISION
+					ABOUT US
 					</a>
 					<a href="{base}/sponsors" class="text-black big-text"
 					class:bg-primary-hover-token={isHovered}
@@ -45,14 +45,14 @@
 					on:mouseout={() => isHovered = false}
 					on:focus={() => isHovered = true}
 					on:blur={() => isHovered = false}
-					> ABOUT US </a>
+					> SPONSORS </a>
 					<a href="{base}/vision" class="text-black big-text"
 					class:bg-primary-hover-token={isHovered}
 					on:mouseover={() => isHovered = true}
 					on:mouseout={() => isHovered = false}
 					on:focus={() => isHovered = true}
 					on:blur={() => isHovered = false}
-					> SPONSORS </a>
+					> OUR VISION </a>
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
