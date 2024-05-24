@@ -17,6 +17,9 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Change directory
+        run: cd bio-rocket
+
       - name: Install dependencies
         run: npm install
 
