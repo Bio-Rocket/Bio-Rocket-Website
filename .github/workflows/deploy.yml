@@ -31,6 +31,10 @@ jobs:
 
       - name: Print working directory
         run: pwd
+
+      - name: List directory contents
+        run: ls -la bio-rocket
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
