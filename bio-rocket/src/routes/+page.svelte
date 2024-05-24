@@ -1,9 +1,10 @@
 <script>
+	import { base } from '$app/paths';
 	import Soar from '$lib/assets/soar.svg';
 	import Eng from '$lib/assets/eng.svg';
 	import Uofc from '$lib/assets/uofc.svg';
 
-	let Rocket = '/biorocketfull.svg';
+	let Rocket = `${base}/biorocketfull.svg`;
 </script>
 
 <div class="container h-screen mx-auto flex justify-end items-start relative">
