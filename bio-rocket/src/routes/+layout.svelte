@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import Logo from '$lib/assets/biorocket.svg';
+	import Logo from '$lib/assets/2BIOROCKET.svg';
 	import Github from '$lib/assets/github.svg';
 	import Linkedin from '$lib/assets/linkedin.svg';
 	import Instagram from '$lib/assets/instagram.svg';
@@ -23,8 +23,7 @@
 					<img
 						src={Logo}
 						alt="BioRocket Logo"
-						width="200"
-						height="40"
+						width="280"
 					/>
 				</a>
 			</svelte:fragment>
