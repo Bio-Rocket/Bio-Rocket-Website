@@ -1,10 +1,10 @@
 <script>
 	import { base } from '$app/paths';
-	import Soar from '$lib/assets/soar.svg';
-	import Eng from '$lib/assets/eng.svg';
-	import Uofc from '$lib/assets/uofc.svg';
 
 	let Rocket = `${base}/biorocketfull.svg`;
+	let Soar = `${base}/soar.svg`;
+	let Eng = `${base}/eng.svg`;
+	let Uofc = `${base}/uofc.svg`;
 </script>
 
 <div class="container h-screen mx-auto flex justify-end items-start relative">
@@ -21,16 +21,19 @@
         />
   
 		<div class="flex justify-center space-x-12 mt-4">
-			<embed
+			<img
 				src={Uofc}
+				alt="UofC Logo"
 				width="200"
 			/>
-			<embed
+			<img
 				src={Soar}
+				alt="Soar Logo"
 				width="180"
 			/>
-			<embed
+			<img
 				src={Eng}
+				alt="Eng Logo"
 				width="200"
 			/>
 		</div>
