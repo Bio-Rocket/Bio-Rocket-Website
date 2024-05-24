@@ -20,12 +20,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: bio-rocket
 
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
+        working-directory: bio-rocket
     
 
       - name: Print working directory
