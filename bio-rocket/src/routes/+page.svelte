@@ -1,36 +1,88 @@
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
-		<h2 class="h2">Welcome to Our Capstone.</h2>
-		<!-- Animated Logo -->
-		<figure>
-			<section class="img-bg" />
-		</figure>
-		<!-- / -->
-		<div class="flex justify-center space-x-2">
-			<a
-				class="btn variant-filled"
-				href="https://github.com/Jgerbrandt/BioRocket"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Get Started
-			</a>
-		</div>
+<script>
+	import Rocket from '$lib/assets/biorocketfull.svg';
+	import Soar from '$lib/assets/soar.svg';
+	import Eng from '$lib/assets/eng.svg';
+	import Uofc from '$lib/assets/uofc.svg';
+</script>
 
+<div class="container h-screen mx-auto flex justify-end items-start relative">
+    <div class="triangle"></div>
+	<div class="text-container absolute top-0 right-0 transform translate-x-[-50%] translate-y-[-50%]">
+		<h1>Capstone</h1>
+		<h1>2023/2024</h1>
 	</div>
+    <div class="centered flex flex-col justify-center items-center absolute inset-0">
+        <img
+            src={Rocket}
+            alt="Rocket Logo"
+            width="800"
+        />
+  
+		<div class="flex justify-center space-x-12 mt-4">
+			<img
+				src={Uofc}
+				alt="UofC Logo"
+				width="200"
+			/>
+			<img
+				src={Soar}
+				alt="Soar Logo"
+				width="180"
+			/>
+			<img
+				src={Eng}
+				alt="Eng Logo"
+				width="200"
+			/>
+		</div>
+	</div>
+	
+</div>
+
+<div class="container h-screen mx-auto flex justify-center items-center">
+    <h2> Hello 2</h2>
+</div>
+
+<div class="container h-screen mx-auto flex justify-center items-center">
+    <h3> Hello 3</h3>
+</div>
+
+<div class="container h-screen mx-auto flex justify-center items-center">
+    <h4> Hello 4</h4>
 </div>
 
 <style lang="postcss">
-	figure {
-		@apply flex relative flex-col;
+	.triangle {
+		position: absolute;
+		right: -7vw;
+		top: -15vh;
+		width: 0;
+		height: 0;
+		border-left: 25vw solid transparent;
+		border-bottom: 70vh solid #62A945;
+		transform: rotate(-90deg);
 	}
-	.img-bg {
-		@apply w-64 h-64 md:w-80 md:h-80;
+	.text-container {
+		position: absolute;
+		top: 10vh;
+		right: -11vw;
+		transform: translateX(-50%) translateY(-50%);
+		color: white;
+		font-size: 3em;
 	}
-	.img-bg {
-		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
-			glow 5s linear infinite;
+	h1 {
+		margin-bottom: 0.8em;
+	}
+	h1:nth-of-type(2) {
+		font-size: 0.5em;
+		text-align: center;
+	}
+	.container {
+		@apply h-screen;
+	}
+	.centered {
+		position: absolute;
+		inset: 0;
 	}
 	@keyframes glow {
 		0% {
@@ -50,5 +102,8 @@
 		50% {
 			transform: scale(1.5);
 		}
+	}
+	.relative {
+    	position: relative;
 	}
 </style>
