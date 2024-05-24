@@ -1,8 +1,9 @@
 <script>
-	import Rocket from '$lib/assets/biorocketfull.svg';
 	import Soar from '$lib/assets/soar.svg';
 	import Eng from '$lib/assets/eng.svg';
 	import Uofc from '$lib/assets/uofc.svg';
+
+	let Rocket = '/biorocketfull.svg';
 </script>
 
 <div class="container h-screen mx-auto flex justify-end items-start relative">
@@ -12,8 +13,9 @@
 		<h1>2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
-        <embed
+        <img
             src={Rocket}
+			alt="BioRocket Logo"
             width="800"
         />
   
@@ -50,12 +52,12 @@
 <style lang="postcss">
 	.triangle {
 		position: absolute;
-		right: -7vw;
-		top: -15vh;
+		right: -7em;
+		top: -25em;
 		width: 0;
 		height: 0;
-		border-left: 25vw solid transparent;
-		border-bottom: 70vh solid #62A945;
+		border-left: 25em solid transparent;
+		border-bottom: 70em solid #62A945;
 		transform: rotate(-90deg);
 	}
 	.text-container {
