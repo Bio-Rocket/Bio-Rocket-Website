@@ -1,10 +1,8 @@
 <script>
-	import { base } from '$app/paths';
-
-	let Rocket = `${base}/biorocketfull.svg`;
-	let Soar = `${base}/soar.svg`;
-	let Eng = `${base}/eng.svg`;
-	let Uofc = `${base}/uofc.svg`;
+	import Soar from "$lib/assets/soar.svelte";
+	import Uofc from "$lib/assets/uofc.svelte";
+	import Eng from "$lib/assets/eng.svelte";
+	import Rocket from "$lib/assets/biorocketfull.svelte";
 </script>
 
 <div class="container h-screen mx-auto flex justify-end items-start relative">
@@ -14,25 +12,12 @@
 		<h1>2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
-        <img
-            src={Rocket}
-			alt="BioRocket Logo"
-            width="800"
-        />
-  
+
+        <svelte:component this={Rocket} />
 		<div class="flex justify-center space-x-12 mt-4">
-			<embed
-				src={Uofc}
-				width="200"
-			/>
-			<embed
-				src={Soar}
-				width="180"
-			/>
-			<embed
-				src={Eng}
-				width="200"
-			/>
+			<svelte:component this={Uofc} />	
+			<svelte:component this={Soar} width={200} />
+			<svelte:component this={Eng} />
 		</div>
 	</div>
 	

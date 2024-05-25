@@ -1,4 +1,8 @@
-<svg width="2569" height="1211" viewBox="0 0 2569 1211" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<script>
+    export let width = 200;
+</script>
+
+<svg {width} viewBox="0 0 2600 1200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="Frame 1">
 <g id="Mask group">
 <mask id="mask0_186_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="2569" height="1211">
