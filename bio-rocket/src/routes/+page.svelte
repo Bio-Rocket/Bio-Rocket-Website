@@ -3,6 +3,15 @@
 	import Uofc from "$lib/assets/uofc.svelte";
 	import Eng from "$lib/assets/eng.svelte";
 	import Rocket from "$lib/assets/biorocketfull.svelte";
+
+	let listData = [
+    { label: 'The <strong>first</strong> biofuel powered liquid rocket engine designed in Canada' },
+    { label: 'The <strong>fastest</strong> development of a liquid rocket engine in Canada' },
+	{ label: 'The <strong>first</strong> liquid rocket engine designed in Alberta' },
+	{ label: 'Supported by University of Calgary aerospace engineering faculty' },
+	{ label: 'Supported by the University of Calgary’s student rocketry team (SOAR)' },
+  ];
+
 </script>
 
 <div class="container h-screen mx-auto flex justify-end items-start relative">
@@ -20,16 +29,35 @@
 			<svelte:component this={Eng} />
 		</div>
 	</div>
+</div>
+
+<div class="container h-screen mx-auto flex flex-col justify-center items-center">
+    <h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">What is Bio Rocket</h1>
+    <div class="w-full text-token card p-4 space-y-4">
+		<ol class="list space-y-8">
+			{#each listData as v, i}
+				<li>
+					<span class="badge-icon p-10 variant-soft-primary text-4xl">{i + 1}</span>
+					<span class="flex-auto text-4xl">
+						{@html `${v.label}`}
+					</span>
+					<span class="text-4xl">⋮</span>
+				</li>
+			{/each}
+		</ol>
+	</div>
+</div>
+
+<div class="container h-screen mx-auto flex flex-col justify-center items-center">
+    <h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Timeline</h1>
+
+	<div class="snap-x scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10">
+		{#each Array.from({ length: 8 }) as _, i}
+			<div class="snap-start shrink-0 card py-20 w-40 md:w-80 text-center">{i + 1}</div>
+		{/each}
+	</div>
+</div>
 	
-</div>
-
-<div class="container h-screen mx-auto flex justify-center items-center">
-    <h2> Hello 2</h2>
-</div>
-
-<div class="container h-screen mx-auto flex justify-center items-center">
-    <h3> Hello 3</h3>
-</div>
 
 <div class="container h-screen mx-auto flex justify-center items-center">
     <h4> Hello 4</h4>
