@@ -63,7 +63,7 @@
 						height="40"
 					/>
 				</a>
-				<a href="https://linkedin.com" target="_blank" rel="noreferrer">
+				<a href="https://www.linkedin.com/in/biorocket/" target="_blank" rel="noreferrer">
 					<img
 						src={Linkedin}
 						alt="Linkedin Logo"
@@ -71,7 +71,7 @@
 						height="40"
 					/>
 				</a>
-				<a href="https://instagram.com" target="_blank" rel="noreferrer">
+				<a href="https://www.instagram.com/biorocketuofc/" target="_blank" rel="noreferrer">
 					<img
 						src={Instagram}
 						alt="Instagram Logo"
