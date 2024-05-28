@@ -18,7 +18,7 @@
 	const conicStops: ConicStop[] = [
 		{ label: 'Testing', color: 'rgb(var(--color-primary-500))', start: 0, end: 40 },
 		{ label: 'Materials', color: 'rgb(var(--color-primary-400))', start: 40, end: 70 },
-		{ label: 'Equipment', color: 'rgb(var(--color-primary-3q00))', start: 70, end: 93.3 },
+		{ label: 'Equipment', color: 'rgb(var(--color-primary-300))', start: 70, end: 93.3 },
 		{ label: 'Outreach', color: 'rgb(var(--color-primary-200))', start: 93.3, end: 100 },
 	];
 
