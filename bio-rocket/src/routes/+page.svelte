@@ -20,19 +20,11 @@
 			<svelte:component this={Eng} />
 		</div>
 	</div>
+
+	<div class="absolute top-20 left-1/2 transform -translate-x-1/2 font-bold text-4xl">
+        *Coming Soon*
+    </div>
 	
-</div>
-
-<div class="container h-screen mx-auto flex justify-center items-center">
-    <h2> Hello 2</h2>
-</div>
-
-<div class="container h-screen mx-auto flex justify-center items-center">
-    <h3> Hello 3</h3>
-</div>
-
-<div class="container h-screen mx-auto flex justify-center items-center">
-    <h4> Hello 4</h4>
 </div>
 
 <style lang="postcss">
@@ -67,25 +59,6 @@
 	.centered {
 		position: absolute;
 		inset: 0;
-	}
-	@keyframes glow {
-		0% {
-			@apply bg-primary-400/50;
-		}
-		33% {
-			@apply bg-secondary-400/50;
-		}
-		66% {
-			@apply bg-tertiary-400/50;
-		}
-		100% {
-			@apply bg-primary-400/50;
-		}
-	}
-	@keyframes pulse {
-		50% {
-			transform: scale(1.5);
-		}
 	}
 	.relative {
     	position: relative;
