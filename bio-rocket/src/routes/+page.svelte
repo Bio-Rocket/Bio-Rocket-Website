@@ -37,11 +37,11 @@
 		<ol class="list space-y-8">
 			{#each listData as v, i}
 				<li>
-					<span class="badge-icon p-10 variant-soft-primary text-4xl">{i + 1}</span>
-					<span class="flex-auto text-4xl">
+					<span class="badge-icon p-10 variant-soft-primary text-3xl">{i + 1}</span>
+					<span class="flex-auto text-3xl">
 						{@html `${v.label}`}
 					</span>
-					<span class="text-4xl">⋮</span>
+					<span class="text-3xl">⋮</span>
 				</li>
 			{/each}
 		</ol>
@@ -49,14 +49,28 @@
 </div>
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Timeline</h1>
-
-	<div class="snap-x scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10">
-		{#each Array.from({ length: 8 }) as _, i}
-			<div class="snap-start shrink-0 card py-20 w-40 md:w-80 text-center">{i + 1}</div>
+	<h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Timeline</h1>
+	<div class="snap-x scroll-px-4 snap-mandatory scroll-smooth flex gap-8 overflow-x-auto px-4 py-10">
+		{#each [
+			{id: "Sept. 2024", subtitle: 'DESIGN KICKOFF', description: 'The team will set system level design requirements to lay the groundwork for the detailed design phase.'},
+			{id: "Jan. 2025", subtitle: 'HOT FIRE CAMPAIGN I', description: 'It’s rocket science! In this phase, the team will demonstrate their progress with a series of static fire tests of the biofuel liquid rocket engine.'},
+			{id: "Feb. 2025", subtitle: 'HOT FIRE CAMPAIGN II', description: 'After analyzing the data obtained in the first campaign, the team will tweak the engine and test it again, bringing it to its full potential!'},
+			{id: "Mar. 2025", subtitle: 'PROJECT CLOSEOUT', description: 'Our team will showcase Bio Rocket at Sponsor Night and enter the Schulich School of Engineering capstone design fair.'}
+		] as tile, i}
+			<div class="snap-start shrink-0 card py-20 w-40 md:w-80 text-center relative flex flex-col justify-center items-center {i % 2 === 1 ? 'bg-primary-400' : ''}">
+				<h2 class="mb-6 absolute top-0 pt-5"><strong>{tile.id}</strong></h2>
+				<div>
+					<h3 class="mb-6"><strong>{tile.subtitle}</strong></h3>
+					<p>{tile.description}</p>
+					{#if tile.description.split(' ').length <= 19} <!-- Adjust this condition based on your needs -->
+						<p>&nbsp;</p>
+					{/if}
+				</div>
+			</div>
 		{/each}
 	</div>
 </div>
+
 	
 
 <div class="container h-screen mx-auto flex justify-center items-center">
@@ -99,4 +113,10 @@
 	.relative {
     	position: relative;
 	}
+	h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
 </style>
