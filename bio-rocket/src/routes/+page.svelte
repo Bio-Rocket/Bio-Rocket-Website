@@ -1,16 +1,26 @@
-<script>
+<script lang='ts'>
 	import Soar from "$lib/assets/soar.svelte";
 	import Uofc from "$lib/assets/uofc.svelte";
 	import Eng from "$lib/assets/eng.svelte";
 	import Rocket from "$lib/assets/biorocketfull.svelte";
 
+	import { ConicGradient } from '@skeletonlabs/skeleton';
+	import type { ConicStop } from '@skeletonlabs/skeleton';
+
 	let listData = [
-    { label: 'The <strong>first</strong> biofuel powered liquid rocket engine designed in Canada' },
-    { label: 'The <strong>fastest</strong> development of a liquid rocket engine in Canada' },
-	{ label: 'The <strong>first</strong> liquid rocket engine designed in Alberta' },
-	{ label: 'Supported by University of Calgary aerospace engineering faculty' },
-	{ label: 'Supported by the University of Calgary’s student rocketry team (SOAR)' },
-  ];
+		{ label: 'The <strong>first</strong> biofuel powered liquid rocket engine designed in Canada' },
+		{ label: 'The <strong>fastest</strong> development of a liquid rocket engine in Canada' },
+		{ label: 'The <strong>first</strong> liquid rocket engine designed in Alberta' },
+		{ label: 'Supported by University of Calgary aerospace engineering faculty' },
+		{ label: 'Supported by the University of Calgary’s student rocketry team (SOAR)' },
+	];
+
+	const conicStops: ConicStop[] = [
+		{ label: 'Testing', color: 'rgb(var(--color-primary-500))', start: 0, end: 40 },
+		{ label: 'Materials', color: 'rgb(var(--color-primary-400))', start: 40, end: 70 },
+		{ label: 'Equipment', color: 'rgb(var(--color-primary-3q00))', start: 70, end: 93.3 },
+		{ label: 'Outreach', color: 'rgb(var(--color-primary-200))', start: 93.3, end: 100 },
+	];
 
 </script>
 
@@ -71,10 +81,8 @@
 	</div>
 </div>
 
-	
-
 <div class="container h-screen mx-auto flex justify-center items-center">
-    <h4> Hello 4</h4>
+	<ConicGradient stops={conicStops} digits={1} width='w-96' regionCaption="text-center text-5xl mt-8 mb-8 text-primary-500" legend>Cost Breakdown</ConicGradient>
 </div>
 
 <style lang="postcss">
