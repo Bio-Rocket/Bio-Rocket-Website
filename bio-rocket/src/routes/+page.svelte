@@ -7,8 +7,13 @@
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
 
-	let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    let rotateClass = isSafari ? 'rotate-90' : '';
+    let isSafari = false;
+    let rotateClass = '';
+
+    if (typeof window !== 'undefined') {
+        isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        rotateClass = isSafari ? 'rotate-90' : '';
+    }
 
 	let listData = [
 		{ label: 'The <strong>first</strong> biofuel powered liquid rocket engine designed in Canada' },
