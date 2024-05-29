@@ -24,10 +24,12 @@
 
 </script>
 
-<div class="container h-screen mx-auto flex justify-end items-start relative">
+<div class="container h-screen mx-auto flex justify-end items-end relative">
     <div class="triangle"></div>
-	<div class="text-container absolute top-0 right-0 transform translate-x-[-50%] translate-y-[-50%]">
+	<div class="text-container text-right">
+		<h1>Engineering</h1>
 		<h1>Capstone</h1>
+		<h1>Project</h1>
 		<h1>2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
@@ -85,6 +87,108 @@
 	<ConicGradient stops={conicStops} digits={1} width='w-96' regionCaption="text-center text-5xl mt-8 mb-8 text-primary-500" legend>Cost Breakdown</ConicGradient>
 </div>
 
+<div class="container h-screen mx-auto flex flex-col justify-center items-center">
+	<h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Sustainable Rocketry - The Biofuel Advantage</h1>
+    <div class="w-full text-token grid grid-cols-3 md:grid-cols-3 gap-4">
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>RENEWABLE</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Made from renewable biomass, biofuels will never run out!
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>LOW CARBON</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Combustion emissions are partially offset by carbon negative fuel production.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>COMPATIBLE</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Minor design modifications required to replace traditional propellants.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>LOW EMISSON</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Biofuels are non-toxic and emit fewer pollutants.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>LOCAL</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Agricultural feedstocks available for production right here in Alberta!
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+		<div class="card bg-initial card-hover overflow-hidden">
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>EFFICIENT</strong></h3>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p>
+						<!-- cspell:disable -->
+						Comparable performance compared to traditional propellants.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+
+    </div>
+</div>
+
 <style lang="postcss">
 	.triangle {
 		position: absolute;
@@ -92,24 +196,23 @@
 		top: -25em;
 		width: 0;
 		height: 0;
-		border-left: 25em solid transparent;
-		border-bottom: 70em solid #62A945;
+		border-left: 45em solid transparent;
+		border-bottom: 65em solid #62A945;
 		transform: rotate(-90deg);
 	}
 	.text-container {
 		position: absolute;
-		top: 10vh;
-		right: -11vw;
-		transform: translateX(-50%) translateY(-50%);
+		top: 4vh;
+		right: -5vw;
 		color: white;
 		font-size: 3em;
 	}
 	h1 {
 		margin-bottom: 0.8em;
 	}
-	h1:nth-of-type(2) {
+	h1:nth-of-type(4) {
 		font-size: 0.5em;
-		text-align: center;
+		text-align: right;
 	}
 	.container {
 		@apply h-screen;
