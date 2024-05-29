@@ -5,7 +5,7 @@ export const myCustomTheme: CustomThemeConfig = {
     name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
-		"--theme-font-family-base": `Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
+		"--theme-font-family-base": `ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
 		"--theme-font-family-heading": `system-ui`,
 		"--theme-font-color-base": "0 0 0",
 		"--theme-font-color-dark": "255 255 255",
@@ -88,7 +88,7 @@ export const myCustomTheme: CustomThemeConfig = {
 		"--color-error-800": "24 35 138", // #18238a
 		"--color-error-900": "20 29 113", // #141d71
 		// surface | #f5ece5 
-		"--color-surface-50": "250 246 237", // #faf6ed
+		"--color-surface-50": "238 238 238", // #faf6ed #eeeeee
 		"--color-surface-100": "253 251 250", // #fdfbfa
 		"--color-surface-200": "253 250 249", // #fdfaf9
 		"--color-surface-300": "251 247 245", // #fbf7f5
