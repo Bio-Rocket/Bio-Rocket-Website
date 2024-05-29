@@ -7,6 +7,9 @@
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
 
+	let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    let rotateClass = isSafari ? 'rotate-90' : '';
+
 	let listData = [
 		{ label: 'The <strong>first</strong> biofuel powered liquid rocket engine designed in Canada' },
 		{ label: 'The <strong>fastest</strong> development of a liquid rocket engine in Canada' },
@@ -33,8 +36,9 @@
 		<h1>2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
-
-        <svelte:component this={Rocket} />
+		<div class="{rotateClass}">
+        	<svelte:component this={Rocket} />
+		</div>
 		<div class="flex justify-center space-x-12 mt-4">
 			<svelte:component this={Uofc} />	
 			<svelte:component this={Soar} width={200} />
@@ -229,5 +233,9 @@
     }
     h3 {
         font-size: 1.5em;
+    }
+    .rotate-90 {
+        transform: rotate(-90deg) scale(2.7);
+
     }
 </style>
