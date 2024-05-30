@@ -89,8 +89,8 @@
 <style>
     .big-text {
         transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for the shadow and background color */
-        padding: 10px; /* Increase the size */
-        border-radius: 10px; /* Make the corners round */
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .big-text:hover {
