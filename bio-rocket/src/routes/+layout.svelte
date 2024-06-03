@@ -48,7 +48,7 @@
 		<nav class="list-nav">
 			<ul>
 				<li>
-					<a href="{base}/" class={$page.url.pathname === base || $page.url.pathname === base + '/BioRocket/' ? 'bg-primary-active-token' : ''} data-sveltekit-preload-data="hover" on:keypress on:click={drawerStore.close}>
+					<a href="{base}/" class={$page.url.pathname === base || $page.url.pathname === base + '/' ? 'bg-primary-active-token' : ''} data-sveltekit-preload-data="hover" on:keypress on:click={drawerStore.close}>
 						<span class="flex-auto">Home</span>
 					</a>
 				</li>
@@ -94,7 +94,7 @@
 					<i class="fas fa-bars text-xl"></i>
 				</button>
 					<!-- Logo -->
-				<a class="lg:!ml-0 lg:!hidden mobile-button overflow-hidden" href="/" title="Go to Homepage">
+				<a class="lg:!ml-0 lg:!hidden mobile-button overflow-hidden" href="{base}/" title="Go to Homepage">
 					<Favicon width="36" height="36" />
 				</a>
 
