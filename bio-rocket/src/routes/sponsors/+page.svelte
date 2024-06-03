@@ -7,7 +7,7 @@
 </script>
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <h1 class="text-center text-5xl mt-0 mb-8 text-primary-500">Our Sponsors</h1>
+    <h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Our Sponsors</h1>
     <h2 class="text-center text-4xl mt-8 mb-8 text-primary-500">Tier 1 Sponsors</h2>
     <div class="w-full text-token flex justify-center items-center gap-16 mb-8">
         <svelte:component this={Tier1Logo} width={200} />
