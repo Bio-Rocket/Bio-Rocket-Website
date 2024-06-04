@@ -26,20 +26,26 @@
 
 <div class="container h-screen mx-auto flex justify-end items-end relative">
     <div class="triangle"></div>
-	<div class="text-container text-right">
-		<h1>Engineering</h1>
-		<h1>Capstone</h1>
-		<h1>Project</h1>
-		<h1>2023/2024</h1>
+	<div class="text-container text-right mr-8 md:mr-0 mt-[-5%] md:mt-[-1%] lg:space-y-2">
+		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Engineering</h1>
+		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Capstone</h1>
+		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Project</h1>
+		<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-3xl">2023/2024</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
-		<div>
+		<div class="w-[65%]">
         	<svelte:component this={Rocket} />
 		</div>
-		<div class="flex justify-center space-x-12 mt-4">
-			<svelte:component this={Uofc} />	
-			<svelte:component this={Soar} width={200} />
-			<svelte:component this={Eng} />
+		<div class="flex space-x-4 md:space-x-10 justify-center items-center">
+			<div class="w-20 sm:w-48">
+				<svelte:component this={Uofc} />
+			</div>
+			<div class="w-20 sm:w-48">
+				<svelte:component this={Soar} />
+			</div>
+			<div class="w-20 sm:w-48">
+				<svelte:component this={Eng} />
+			</div>
 		</div>
 	</div>
 </div>
@@ -201,19 +207,18 @@
 		border-bottom: 65em solid #62A945;
 		transform: rotate(-90deg);
 	}
+	@media (max-width: 768px) {
+		.triangle {
+			border-left: 50em solid transparent;
+			border-bottom: 50em solid #62A945;
+		}
+	}
 	.text-container {
 		position: absolute;
 		top: 4vh;
 		right: -5vw;
 		color: white;
 		font-size: 3em;
-	}
-	h1 {
-		margin-bottom: 0.8em;
-	}
-	h1:nth-of-type(4) {
-		font-size: 0.5em;
-		text-align: right;
 	}
 	.container {
 		@apply h-screen;
@@ -225,10 +230,4 @@
 	.relative {
     	position: relative;
 	}
-	h2 {
-        font-size: 2em;
-    }
-    h3 {
-        font-size: 1.5em;
-    }
 </style>
