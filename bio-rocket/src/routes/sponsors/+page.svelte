@@ -31,7 +31,7 @@
 
 <div class="container mx-auto flex flex-col justify-top items-center">
     <h1 class="text-center text-3xl sm:text-5xl mt-0 sm:mt-48 mb-8 text-primary-500">Sponsor Us</h1>
-    <div class="w-full text-token grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
+    <div class="w-96 sm:w-full text-token grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
         <div class="card bg-initial card-hover overflow-hidden">
             <header>
                 <img class="logo" src={Book} alt="branding logo" />
