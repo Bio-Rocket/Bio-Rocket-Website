@@ -62,7 +62,7 @@
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
     <h1 class="text-center text-3xl sm:text-5xl mt-8 mb-8 text-primary-500">What is Bio Rocket</h1>
-    <div class="w-full text-token card p-4 space-y-4">
+    <div class="w-96 sm:w-full text-token card p-4 space-y-4">
 		<ol class="list space-y-8">
 			{#each listData as v, i}
 				<li>
@@ -106,7 +106,7 @@
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
 	<h1 class="text-center text-3xl sm:text-5xl mt-8 mb-8 text-primary-500">Sustainable Rocketry - The Biofuel Advantage</h1>
-    <div class="w-full text-token grid grid-cols-2 sm:grid-cols-3 gap-4">
+    <div class="w-96 sm:w-full mb-8  sm:mb-0 text-token grid grid-cols-2 sm:grid-cols-3 gap-4">
 		<div class="card bg-initial card-hover overflow-hidden">
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>RENEWABLE</strong></h3>
@@ -267,7 +267,7 @@
 
 	@media (max-width: 640px) {
 		.timeline-container {
-		margin-top: 60%;
+		margin-top: 70%;
 		margin-bottom: 60%;
 		}
 	}
