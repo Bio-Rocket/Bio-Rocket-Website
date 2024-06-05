@@ -7,10 +7,10 @@
 </script>
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <h1 class="text-center text-3xl sm:text-5xl mt-[0%] sm:mt-8 mb-8 text-primary-500">Our Sponsors</h1>
+    <h1 class="text-center text-3xl sm:text-5xl mt-[0%] sm:mt-36 mb-8 text-primary-500">Our Sponsors</h1>
     <h2 class="text-center text-2xl sm:text-4xl mt-8 mb-8 text-primary-500">Tier 1 Sponsors</h2>
     <div class="w-full text-token flex justify-center items-center gap-8 sm:gap-16 mb-0 sm:mb-8">
-        <div class="w-[30%]">
+        <div class="w-[30%] sm:w-[15%]">
             <svelte:component this={Tier1Logo} />
         </div>
         <div class="sponsor-placeholder"></div>
@@ -30,7 +30,7 @@
 </div>
 
 <div class="container mx-auto flex flex-col justify-top items-center">
-    <h1 class="text-center text-3xl sm:text-5xl mt-0 mb-8 text-primary-500">Sponsor Us</h1>
+    <h1 class="text-center text-3xl sm:text-5xl mt-0 sm:mt-48 mb-8 text-primary-500">Sponsor Us</h1>
     <div class="w-full text-token grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
         <div class="card bg-initial card-hover overflow-hidden">
             <header>
