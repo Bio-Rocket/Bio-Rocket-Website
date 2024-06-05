@@ -9,11 +9,11 @@
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center overflow-auto">
-	<h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Meet the Visionaries</h1>
-    <div class="w-full mb-8 text-token grid grid-cols-3 md:grid-cols-3 gap-4">
+	<h1 class="text-center text-3xl sm:text-5xl mt-8 mb-8 text-primary-500">Meet the Visionaries</h1>
+    <div class="w-96 sm:w-full mb-8 text-token grid grid-cols-1 sm:grid-cols-3 gap-4">
 		<div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Jayden} alt="Jesse" class="h-64 object-cover object-contain">
+                <img src={Jayden} alt="Jayden" class="h-64 object-cover object-contain">
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Jayden Sorensen                </strong></h3>
@@ -32,7 +32,7 @@
 		</div>
         <div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Jerry} alt="Jesse" class="h-64 object-cover object-contain">
+                <img src={Jerry} alt="Jerry" class="h-64 object-cover object-contain">
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Jerry Wang</strong></h3>
@@ -51,7 +51,7 @@
 		</div>
         <div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Rimoon} alt="Jesse" class="h-64 object-cover object-contain">
+                <img src={Rimoon} alt="Rimoon" class="h-64 object-cover object-contain">
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Rimoon Koryal                </strong></h3>
@@ -89,7 +89,7 @@
 		</div>
         <div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Lukas} alt="Jesse" class="h-64 object-cover object-contain">
+                <img src={Lukas} alt="Lukas" class="h-64 object-cover object-contain">
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Lukas Kobler</strong></h3>
@@ -108,7 +108,7 @@
 		</div>
         <div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Wade} alt="Jesse" class="h-64 object-cover object-contain">
+                <img src={Wade} alt="Wade" class="h-64 object-cover object-contain">
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Xuhui (Wade) Liu                </strong></h3>
