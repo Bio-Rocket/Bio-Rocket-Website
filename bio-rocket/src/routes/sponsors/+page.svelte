@@ -7,29 +7,31 @@
 </script>
 
 <div class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <h1 class="text-center text-5xl mt-8 mb-8 text-primary-500">Our Sponsors</h1>
-    <h2 class="text-center text-4xl mt-8 mb-8 text-primary-500">Tier 1 Sponsors</h2>
-    <div class="w-full text-token flex justify-center items-center gap-16 mb-8">
-        <svelte:component this={Tier1Logo} width={200} />
+    <h1 class="text-center text-3xl sm:text-5xl mt-[0%] sm:mt-8 mb-8 text-primary-500">Our Sponsors</h1>
+    <h2 class="text-center text-2xl sm:text-4xl mt-8 mb-8 text-primary-500">Tier 1 Sponsors</h2>
+    <div class="w-full text-token flex justify-center items-center gap-8 sm:gap-16 mb-0 sm:mb-8">
+        <div class="w-[30%]">
+            <svelte:component this={Tier1Logo} />
+        </div>
         <div class="sponsor-placeholder"></div>
     </div>
-    <h2 class="text-center text-4xl mt-8 mb-8 text-primary-500">Tier 2 Sponsors</h2>
-    <div class="w-full text-token flex justify-center items-center gap-16 mb-8">
+    <h2 class="text-center text-2xl sm:text-4xl mt-8 mb-8 text-primary-500">Tier 2 Sponsors</h2>
+    <div class="w-full text-token flex justify-center items-center gap-8 sm:gap-16 mb-0 sm:mb-8">
         <div class="sponsor-placeholder"></div>
         <div class="sponsor-placeholder"></div>
         <div class="sponsor-placeholder"></div>
     </div>
-    <h2 class="text-center text-4xl mt-8 mb-8 text-primary-500">Tier 3 Sponsors</h2>
-    <div class="w-full text-token flex justify-center items-center gap-16 mb-8">
+    <h2 class="text-center text-2xl sm:text-4xl mt-8 mb-8 text-primary-500">Tier 3 Sponsors</h2>
+    <div class="w-full text-token flex justify-center items-center gap-8 sm:gap-16 mb-0 sm:mb-8">
         <div class="sponsor-placeholder"></div>
         <div class="sponsor-placeholder"></div>
         <div class="sponsor-placeholder"></div>
     </div>
 </div>
 
-<div class="container h-screen mx-auto flex flex-col justify-top items-center">
-    <h1 class="text-center text-5xl mt-0 mb-8 text-primary-500">Sponsor Us</h1>
-    <div class="w-full text-token grid grid-cols-3 md:grid-cols-3 gap-4">
+<div class="container mx-auto flex flex-col justify-top items-center">
+    <h1 class="text-center text-3xl sm:text-5xl mt-0 mb-8 text-primary-500">Sponsor Us</h1>
+    <div class="w-full text-token grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
         <div class="card bg-initial card-hover overflow-hidden">
             <header>
                 <img class="logo" src={Book} alt="branding logo" />
@@ -81,8 +83,8 @@
             <hr class="opacity-50" />
         </div>
     </div>
-    <h2 class="text-center text-4xl mt-8 mb-0">Help us realize our vision today!</h2>
-    <h3 class="text-center text-3xl mt-4 mb-8">
+    <h2 class="text-center text-2xl sm:text-4xl mt-8 mb-0">Help us realize our vision today!</h2>
+    <h3 class="text-center text-xl sm:text-3xl mt-4 mb-[20%] sm:mb-8">
         <a href="mailto:biorocketuofc@gmail.com" class="email-link">biorocketuofc@gmail.com</a>
     </h3>
 </div>
@@ -100,6 +102,13 @@
         width: 150px;
         height: 150px;
         background-color: #ddd; /* light gray */
+    }
+
+    @media (max-width: 640px) {
+        .sponsor-placeholder {
+            width: 100px;
+            height: 100px;
+        }
     }
     .email-link {
         display: inline-block;

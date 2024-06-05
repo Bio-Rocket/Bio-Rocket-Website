@@ -138,7 +138,7 @@
 						height="40"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/in/biorocket/" target="_blank" rel="noreferrer">
+				<a href="https://www.linkedin.com/company/biorocket/" target="_blank" rel="noreferrer">
 					<img
 						src={Linkedin}
 						alt="Linkedin Logo"
