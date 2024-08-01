@@ -271,4 +271,21 @@
 		margin-bottom: 60%;
 		}
 	}
+	@media (min-width: 1536px) and (max-width: 1745px) {
+		.text-container {
+			position: absolute;
+			top: 4vh;
+			right: 1%;
+			color: white;
+			font-size: 3em;
+		}
+		.triangle {
+			position: relative;
+			width: 0;
+			height: 0;
+			transform: rotate(-90deg);
+			border-left: 50vw solid transparent;
+			border-bottom: 65vw solid #62A945;
+		}
+	}
 </style>
