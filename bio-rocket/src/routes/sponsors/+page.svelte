@@ -1,5 +1,5 @@
 <script>
-    import Sponsors from "$lib/assets/sponsors.svelte";
+    import Sponsors from '$lib/assets/sponsors.svelte';
 </script>
 
 <main>
