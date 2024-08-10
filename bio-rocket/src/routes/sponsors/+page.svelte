@@ -1,8 +1,10 @@
 <script>
+    import Sponsors from "$lib/assets/sponsors.svelte";
 </script>
 
 <main>
-    <div class="container">
+    <div class="sponsors">
+        <svelte:component this={Sponsors} />
     </div>
 </main>
 
@@ -12,13 +14,18 @@
         padding: 0;
         width: 100%;
         height: 100%;
-        overflow-x: hidden;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsors {
+        width: 100%;
+        display: flex;
+        /* background-color: black;
+        color: black; */
     }
 
-    .container {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        color: black;
-    }
 </style>
