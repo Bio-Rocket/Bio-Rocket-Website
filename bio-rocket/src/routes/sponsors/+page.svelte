@@ -24,8 +24,6 @@
     .sponsors {
         width: 100%;
         display: flex;
-        /* background-color: black;
-        color: black; */
     }
 
 </style>
