@@ -1,10 +1,15 @@
 <script>
     import Vision from '$lib/assets/vision.svelte';
+    import MobileVision from "$lib/assets/vision_mobile.svelte";
+
 </script>
 
 <main>
-    <div class="vision">
+    <div class="vision desktop">
         <svelte:component this={Vision} />
+    </div>
+    <div class="vision mobile">
+        <svelte:component this={MobileVision} />
     </div>
 </main>
 
@@ -24,6 +29,20 @@
     .vision {
         width: 100%;
         display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    @media (max-width: 640px) {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            width: 100%;
+            display: flex;
+        }
     }
 
 </style>
