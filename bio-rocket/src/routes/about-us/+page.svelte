@@ -2,15 +2,35 @@
     import Jesse from "$lib/assets/jesse.png";
     import Jayden from "$lib/assets/jayden.png";
     import Lukas from "$lib/assets/lukas.png";
-    import Jerry from "$lib/assets/jerry.png";
+    import Ethan from "$lib/assets/ethan.png";
     import Rimoon from "$lib/assets/rimoon.png";
     import Wade from "$lib/assets/wade.png";
+	import Aj from "$lib/assets/aj.png";
     
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center overflow-auto">
 	<h1 class="text-center text-3xl sm:text-5xl mt-8 mb-8 text-primary-500">Meet the Visionaries</h1>
-    <div class="w-96 sm:w-full mb-8 text-token grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="w-96 sm:w-full mb-8 text-token grid grid-cols-1 sm:grid-cols-4 gap-4">
+		<div class="card bg-initial card-hover overflow-hidden">
+            <div class="mt-4 flex justify-center items-center">
+                <img src={Lukas} alt="Lukas" class="h-64 object-cover object-contain">
+            </div>
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Lukas Kobler</strong></h3>
+                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Project Manager</h4>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p class="text-center">
+						<!-- cspell:disable -->
+						Lukas is studying mechanical engineering at the University of Calgary and has been developing rocket propulsion systems for SOAR for over 5 years and led the development of Dracarys I, the most powerful hybrid rocket motor ever flown, in Alberta.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
 		<div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
                 <img src={Jayden} alt="Jayden" class="h-64 object-cover object-contain">
@@ -30,19 +50,38 @@
 			</div>
 			<hr class="opacity-50" />
 		</div>
-        <div class="card bg-initial card-hover overflow-hidden">
+		<div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Jerry} alt="Jerry" class="h-64 object-cover object-contain">
+                <img src={Jesse} alt="Jesse" class="h-64 object-cover object-contain">
             </div>
 			<header>
-				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Jerry Wang</strong></h3>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Jesse Gerbrandt</strong></h3>
+                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Software Lead</h4>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p class="text-center">
+						<!-- cspell:disable -->
+						With 2 years of avionics experience on SOAR, Jesse has developed flight and safety-critical software, excelling in embedded systems, communication, and GUI programming, ensuring performance and reliability.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+        <div class="card bg-initial card-hover overflow-hidden">
+            <div class="mt-4 flex justify-center items-center">
+                <img src={Aj} alt="AJ" class="h-64 object-cover object-contain">
+            </div>
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>AJ</strong></h3>
                 <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Sustainability Lead</h4>
 			</header>
 			<div class="p-4 space-y-4">
 				<article>
 					<p class="text-center">
 						<!-- cspell:disable -->
-						Jerry has been working on rocket propulsion systems with SOAR for the past 4 years, and has 12 months of internship experience in the aviation industry. With his major in biomedical engineering, he is ready to push the envelope of sustainable fuels. 
+						With 9 years of experience in the pipeline construction industry, AJ brings a strong background in large-scale infrastructure projects where precision, safety, and teamwork are key. During his year with SOAR airframe, he has further developed his passion for engineering challenges, contributing to advanced systems and collaborative solutions.
 						<!-- cspell:enable -->
 					</p>
 				</article>
@@ -70,44 +109,6 @@
 		</div>
         <div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
-                <img src={Jesse} alt="Jesse" class="h-64 object-cover object-contain">
-            </div>
-			<header>
-				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Jesse Gerbrandt</strong></h3>
-                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Software Lead</h4>
-			</header>
-			<div class="p-4 space-y-4">
-				<article>
-					<p class="text-center">
-						<!-- cspell:disable -->
-						With 2 years of avionics experience on SOAR, Jesse has developed flight and safety-critical software, excelling in embedded systems, communication, and GUI programming, ensuring performance and reliability.
-						<!-- cspell:enable -->
-					</p>
-				</article>
-			</div>
-			<hr class="opacity-50" />
-		</div>
-        <div class="card bg-initial card-hover overflow-hidden">
-            <div class="mt-4 flex justify-center items-center">
-                <img src={Lukas} alt="Lukas" class="h-64 object-cover object-contain">
-            </div>
-			<header>
-				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Lukas Kobler</strong></h3>
-                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Project Manager</h4>
-			</header>
-			<div class="p-4 space-y-4">
-				<article>
-					<p class="text-center">
-						<!-- cspell:disable -->
-						Lukas is studying mechanical engineering at the University of Calgary and has been developing rocket propulsion systems for SOAR for over 5 years and led the development of Dracarys I, the most powerful hybrid rocket motor ever flown, in Alberta.
-						<!-- cspell:enable -->
-					</p>
-				</article>
-			</div>
-			<hr class="opacity-50" />
-		</div>
-        <div class="card bg-initial card-hover overflow-hidden">
-            <div class="mt-4 flex justify-center items-center">
                 <img src={Wade} alt="Wade" class="h-64 object-cover object-contain">
             </div>
 			<header>
@@ -119,6 +120,25 @@
 					<p class="text-center">
 						<!-- cspell:disable -->
 						Wade has a background in aircraft mechanics and research experience in the AERO-CORE Lab at the University of Calgary. A 12-month internship focused on aircraft structural design and airworthiness certification, provided him with a solid understanding of aerospace engineering.
+						<!-- cspell:enable -->
+					</p>
+				</article>
+			</div>
+			<hr class="opacity-50" />
+		</div>
+		<div class="card bg-initial card-hover overflow-hidden">
+            <div class="mt-4 flex justify-center items-center">
+                <img src={Ethan} alt="Ethan" class="h-64 object-cover object-contain">
+            </div>
+			<header>
+				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Ethan Subasic</strong></h3>
+                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Mission Control Specialist</h4>
+			</header>
+			<div class="p-4 space-y-4">
+				<article>
+					<p class="text-center">
+						<!-- cspell:disable -->
+						Ethan is studying software and aerospace engineering at the University of Calgary. During his 2 years at SOAR and 1 year at Garmin he designed and implemented the ground system used by SOAR with a focus on safety along with computational efficiency and security.
 						<!-- cspell:enable -->
 					</p>
 				</article>
