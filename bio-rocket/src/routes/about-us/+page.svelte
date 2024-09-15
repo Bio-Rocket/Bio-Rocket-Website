@@ -94,7 +94,7 @@
             </div>
 			<header>
 				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>Rimoon Koryal                </strong></h3>
-                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Test Lead</h4>
+                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Manufacturing Lead</h4>
 			</header>
 			<div class="p-4 space-y-4">
 				<article>
