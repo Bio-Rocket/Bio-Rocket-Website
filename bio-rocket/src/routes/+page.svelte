@@ -40,7 +40,7 @@
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Engineering</h1>
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Capstone</h1>
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl">Project</h1>
-		<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-3xl">2023/2024</h1>
+		<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-3xl">2024/2025</h1>
 	</div>
     <div class="centered flex flex-col justify-center items-center absolute inset-0">
 		<div class="w-[80%]">
