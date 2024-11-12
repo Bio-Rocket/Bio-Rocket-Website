@@ -30,6 +30,21 @@
 		if (window.innerWidth <= 640) {
 		width = 'w-64';
 		}
+
+        // Fetch the prerendered HTML for the sponsors page in the background
+        fetch('./sponsors')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(html => {
+                console.log('Sponsors page prerendered HTML fetched and cached');
+            })
+            .catch(error => {
+                console.error('Error fetching sponsors page prerendered HTML:', error);
+            });
 	});
 
 </script>
