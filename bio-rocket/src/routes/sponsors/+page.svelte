@@ -15,7 +15,6 @@
     import Automation from '$lib/assets/automation.png';
     import Solvest from '$lib/assets/solvest.png';
     import Protospace from '$lib/assets/protospace.png';
-    import Mitacs from '$lib/assets/mitacs.png';
     import Whatif from '$lib/assets/whatif.png';
     import Omega from '$lib/assets/omega.png';
     import Outfrnt from '$lib/assets/outfrnt.png';
@@ -73,9 +72,9 @@
     <a href="https://www.yukon3dsolutions.com/" target="_blank">
         <img src={Yukon3d} alt="Yukon3d" class="foreground yukon" />
     </a>
-    <a href="https://www.avnet.com/wps/portal/us" target="_blank">
+    <!-- <a href="https://www.avnet.com/wps/portal/us" target="_blank">
         <img src={Avnet} alt="Avnet" class="foreground avnet" />
-    </a>
+    </a> -->
     <a href="https://www.ifm.com/ca/en" target="_blank">
         <img src={Ifm} alt="Ifm" class="foreground ifm" />
     </a>
@@ -106,10 +105,6 @@
     <a href="https://protospace.ca/" target="_blank">
         <img src={Protospace} alt="Protospace" class="foreground
         protospace" />
-    </a>
-    <a href="https://www.mitacs.ca/" target="_blank">
-        <img src={Mitacs} alt="Mitacs" class="foreground
-        mitacs" />
     </a>
     <a href="https://whatif-labs.ca/" target="_blank">
         <img src={Whatif} alt="Whatif" class="foreground
@@ -171,14 +166,14 @@
     }
     .yukon {
         top: calc(var(--container-width) * 0.85);
-        left: 30%;
+        left: 50%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2400));
     }
-    .avnet {
+    /* .avnet {
         top: calc(var(--container-width) * 0.85);
         left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
-    }
+    } */
     .ifm {
         top: calc(var(--container-width) * 1.36);
         left: 50%;
@@ -218,11 +213,6 @@
         top: calc(var(--container-width) * 2.05);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 9000));
-    }
-    .mitacs {
-        top: calc(var(--container-width) * 2.18);
-        left: 50%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
     }
     .whatif {
         top: calc(var(--container-width) * 2.33);
@@ -268,14 +258,14 @@
         }
         .yukon {
             top: calc(var(--container-width) * 0.85);
-            left: 30%;
+            left: 50%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
         }
-        .avnet {
+        /* .avnet {
             top: calc(var(--container-width) * 0.85);
             left: 70%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        }
+        } */
         .ifm {
             top: calc(var(--container-width) * 1.36);
             left: 50%;
@@ -315,11 +305,6 @@
             top: calc(var(--container-width) * 2.05);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
-        }
-        .mitacs {
-            top: calc(var(--container-width) * 2.18);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
         }
         .whatif {
             top: calc(var(--container-width) * 2.33);
