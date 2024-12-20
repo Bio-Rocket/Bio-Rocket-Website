@@ -47,9 +47,6 @@
 
         // Return a cleanup function
         return () => {
-            clearInterval(heartbeatInterval); // Stop the interval when the component is destroyed
-            clearInterval(timestampInterval);
-
             window.removeEventListener('resize', handleResize);
         };
     });
