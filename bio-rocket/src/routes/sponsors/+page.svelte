@@ -1,23 +1,25 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
     import Sponsors from '$lib/assets/sponsors.svelte';
-    const Soar = '/soar.png'
-    const Biorocket = '/biorocket.png'
-    const Yukon3d = '/yukon3d.png'
-    const Avnet = '/avnet.png'
-    const Ifm = '/ifm.png'
-    const Eecol = '/eecol.png'
-    const Phoenix = '/phoenix.png'
-    const Labjack = '/labjack.png'
-    const Skytrac = '/skytrac.png'
-    const Automation = '/automation.png'
-    const Solvest = '/solvest.png'
-    const Protospace = '/protospace.png'
-    const Whatif = '/whatif.png'
-    const Omega = '/dwyeromega.png'
-    const Outfrnt = '/outfrnt.png'
-    const Rockymountain = '/rockymountain.png'
-    const Swagelok = '/swagelok.png'
+
+    const Soar = `${base}/soar.png`
+    const Biorocket = `${base}/biorocket.png`
+    const Yukon3d = `${base}/yukon3d.png`
+    const Avnet = `${base}/avnet.png`
+    const Ifm = `${base}/ifm.png`
+    const Eecol = `${base}/eecol.png`
+    const Phoenix = `${base}/phoenix.png`
+    const Labjack = `${base}/labjack.png`
+    const Skytrac = `${base}/skytrac.png`
+    const Automation = `${base}/automation.png`
+    const Solvest = `${base}/solvest.png`
+    const Protospace = `${base}/protospace.png`
+    const Whatif = `${base}/whatif.png`
+    const Omega = `${base}/dwyeromega.png`
+    const Outfrnt = `${base}/outfrnt.png`
+    const Rockymountain = `${base}/rockymountain.png`
+    const Swagelok = `${base}/swagelok.png`
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
