@@ -1,24 +1,23 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import Sponsors from '$lib/assets/sponsors.svelte';
-    import Soar from '$lib/assets/soar.png';
-    import Biorocket from '$lib/assets/biorocket.png';
-    import Ucalgary from '$lib/assets/ucalgary.png';
-    import Schulich from '$lib/assets/schulich.png';
-    import Yukon3d from '$lib/assets/yukon3d.png';
-    import Avnet from '$lib/assets/avnet.png';
-    import Ifm from '$lib/assets/ifm.png';
-    import Eecol from '$lib/assets/eecol.png';
-    import Phoenix from '$lib/assets/phoenix.png';
-    import Labjack from '$lib/assets/labjack.png';
-    import Skytrac from '$lib/assets/skytrac.png';
-    import Automation from '$lib/assets/automation.png';
-    import Solvest from '$lib/assets/solvest.png';
-    import Protospace from '$lib/assets/protospace.png';
-    import Whatif from '$lib/assets/whatif.png';
-    import Omega from '$lib/assets/omega.png';
-    import Outfrnt from '$lib/assets/outfrnt.png';
-    import Rockymountain from '$lib/assets/rockymountain.png';
+    const Soar = '/soar.png'
+    const Biorocket = '/biorocket.png'
+    const Yukon3d = '/yukon3d.png'
+    const Avnet = '/avnet.png'
+    const Ifm = '/ifm.png'
+    const Eecol = '/eecol.png'
+    const Phoenix = '/phoenix.png'
+    const Labjack = '/labjack.png'
+    const Skytrac = '/skytrac.png'
+    const Automation = '/automation.png'
+    const Solvest = '/solvest.png'
+    const Protospace = '/protospace.png'
+    const Whatif = '/whatif.png'
+    const Omega = '/dwyeromega.png'
+    const Outfrnt = '/outfrnt.png'
+    const Rockymountain = '/rockymountain.png'
+    const Swagelok = '/swagelok.png'
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
@@ -60,12 +59,6 @@
     <a href="https://www.biorocket.ca/" target="_blank">
         <img src={Biorocket} alt="Biorocket" class="foreground biorocket" />
     </a>
-    <a href="https://www.ucalgary.ca/" target="_blank">
-        <img src={Ucalgary} alt="Ucalgary" class="foreground ucalgary" />
-    </a>
-    <a href="https://schulich.ucalgary.ca/" target="_blank">
-        <img src={Schulich} alt="Schulich" class="foreground schulich" />
-    </a>
     <a href="https://www.yukon3dsolutions.com/" target="_blank">
         <img src={Yukon3d} alt="Yukon3d" class="foreground yukon" />
     </a>
@@ -75,10 +68,14 @@
     <a href="https://www.ifm.com/ca/en" target="_blank">
         <img src={Ifm} alt="Ifm" class="foreground ifm" />
     </a>
-    <a href="https://www.eecol.com/ca/en" target="_blank">
+    <a href="https://www.swagelok.com/en" target="_blank">
+        <img src={Swagelok} alt="Swagelok" class="foreground
+        swagelok" />
+    </a>
+    <!-- <a href="https://www.eecol.com/ca/en" target="_blank">
         <img src={Eecol} alt="Eecol" class="foreground
         eecol" />
-    </a>
+    </a> -->
     <a href="https://www.phoenixcontact.com/en-ca/" target="_blank">
         <img src={Phoenix} alt="Phoenix" class="foreground
         phoenix" />
@@ -151,7 +148,7 @@
         left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
     }
-    .ucalgary {
+    /* .ucalgary {
         top: calc(var(--container-width) * 0.43);
         left: 35%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3000));
@@ -160,7 +157,7 @@
         top: calc(var(--container-width) * 0.43);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
-    }
+    } */
     .yukon {
         top: calc(var(--container-width) * 0.85);
         left: 50%;
@@ -172,20 +169,29 @@
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
     } */
     .ifm {
-        top: calc(var(--container-width) * 1.36);
-        left: 50%;
+        top: calc(var(--container-width) * 1.3);
+        left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
     }
-    .eecol {
+
+    .swagelok {
+        top: calc(var(--container-width) * 1.3);
+        left: 30%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+    }
+
+    .phoenix {
+        top: calc(var(--container-width) * 1.45);
+        left: 45%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
+    }
+
+    /* .eecol {
         top: calc(var(--container-width) * 1.73);
         left: 32%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
-    }
-    .phoenix {
-        top: calc(var(--container-width) * 1.73);
-        left: 68%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4000));
-    }
+    } */
+
     .labjack {
         top: calc(var(--container-width) * 1.84);
         left: 32%;
@@ -234,16 +240,16 @@
 
     @media (max-width: 400px) {
         .soar {
-            top: calc(var(--container-width) * 0.28);
+            top: calc(var(--container-width) * 0.35);
             left: 30%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
         }
         .biorocket {
-            top: calc(var(--container-width) * 0.29);
+            top: calc(var(--container-width) * 0.36);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
         }
-        .ucalgary {
+        /* .ucalgary {
             top: calc(var(--container-width) * 0.43);
             left: 35%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
@@ -252,9 +258,9 @@
             top: calc(var(--container-width) * 0.43);
             left: 60%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
-        }
+        } */
         .yukon {
-            top: calc(var(--container-width) * 0.85);
+            top: calc(var(--container-width) * 0.86);
             left: 50%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
         }
@@ -265,19 +271,24 @@
         } */
         .ifm {
             top: calc(var(--container-width) * 1.36);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
+            left: 65%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
         }
-        .eecol {
+        .swagelok {
+            top: calc(var(--container-width) * 1.3);
+            left: 25%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1100));
+        }
+        .phoenix {
+            top: calc(var(--container-width) * 1.42);
+            left: 35%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1400));
+        }
+        /* .eecol {
             top: calc(var(--container-width) * 1.73);
             left: 32%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        }
-        .phoenix {
-            top: calc(var(--container-width) * 1.73);
-            left: 68%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        }
+        } */
         .labjack {
             top: calc(var(--container-width) * 1.84);
             left: 32%;
