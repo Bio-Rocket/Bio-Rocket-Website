@@ -6,6 +6,7 @@
     const Soar = `${base}/soar.png`
     const Biorocket = `${base}/biorocket.png`
     const Yukon3d = `${base}/yukon3d.png`
+    const YukonUniversity = `${base}/yukonuniversity.png`
     const Avnet = `${base}/avnet.png`
     const Ifm = `${base}/ifm.png`
     const Eecol = `${base}/eecol.png`
@@ -20,6 +21,10 @@
     const Outfrnt = `${base}/outfrnt.png`
     const Rockymountain = `${base}/rockymountain.png`
     const Swagelok = `${base}/swagelok.png`
+    const Cenovus = `${base}/cenovus.png`
+    const Mikroe = `${base}/mikroe.png`
+    const Rfdesign = `${base}/rfdesign.jpg`
+    const Misumi = `${base}/misumi.png`
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
@@ -64,6 +69,9 @@
     <a href="https://www.yukon3dsolutions.com/" target="_blank">
         <img src={Yukon3d} alt="Yukon3d" class="foreground yukon" />
     </a>
+    <a href="https://www.yukonu.ca/" target="_blank">
+        <img src={YukonUniversity} alt="YukonUniversity" class="foreground yukonuni" />
+    </a>
     <!-- <a href="https://www.avnet.com/wps/portal/us" target="_blank">
         <img src={Avnet} alt="Avnet" class="foreground avnet" />
     </a> -->
@@ -74,10 +82,10 @@
         <img src={Swagelok} alt="Swagelok" class="foreground
         swagelok" />
     </a>
-    <!-- <a href="https://www.eecol.com/ca/en" target="_blank">
+    <a href="https://www.eecol.com/ca/en" target="_blank">
         <img src={Eecol} alt="Eecol" class="foreground
         eecol" />
-    </a> -->
+    </a>
     <a href="https://www.phoenixcontact.com/en-ca/" target="_blank">
         <img src={Phoenix} alt="Phoenix" class="foreground
         phoenix" />
@@ -118,6 +126,22 @@
         <img src={Rockymountain} alt="Rockymountain" class="foreground
         rockymountain" />
     </a>
+    <a href="https://www.cenovus.com/" target="_blank">
+        <img src={Cenovus} alt="Cenovus" class="foreground
+        cenovus" />
+    </a>
+    <a href="https://www.mikroe.com/" target="_blank">
+        <img src={Mikroe} alt="Mikroe" class="foreground
+        mikroe" />
+    </a>
+    <a href="https://rfdesign.com.au/" target="_blank">
+        <img src={Rfdesign} alt="Rfdesign" class="foreground
+        rfdesign" />
+    </a>
+    <a href="https://www.misumiusa.com/" target="_blank">
+        <img src={Misumi} alt="Misumi" class="foreground
+        misumi" />
+    </a>
 
 </div>
 
@@ -141,35 +165,36 @@
         z-index: 1;
     }
     .soar {
-        top: calc(var(--container-width) * 0.28);
+        top: calc(var(--container-width) * 0.32);
         left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 7000));
     }
     .biorocket {
-        top: calc(var(--container-width) * 0.29);
+        top: calc(var(--container-width) * 0.33);
         left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
     }
-    /* .ucalgary {
-        top: calc(var(--container-width) * 0.43);
-        left: 35%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3000));
-    }
-    .schulich {
-        top: calc(var(--container-width) * 0.43);
-        left: 65%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
-    } */
+
+    /* 
+    Platinum Tier 
+    */
+
     .yukon {
         top: calc(var(--container-width) * 0.85);
-        left: 50%;
+        left: 75%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2400));
     }
-    /* .avnet {
+
+    .yukonuni {
         top: calc(var(--container-width) * 0.85);
-        left: 70%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
-    } */
+        left: 30%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2400));
+    }
+
+    /* 
+    Silver Tier
+    */
+
     .ifm {
         top: calc(var(--container-width) * 1.3);
         left: 70%;
@@ -188,52 +213,91 @@
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
     }
 
-    /* .eecol {
-        top: calc(var(--container-width) * 1.73);
+    /*
+    Copper Tier
+    */
+
+    .cenovus {
+        top: calc(var(--container-width) * 1.74);
         left: 32%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
-    } */
+    }
+    .mikroe {
+        top: calc(var(--container-width) * 1.74);
+        left: 65%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
+    }
 
     .labjack {
         top: calc(var(--container-width) * 1.84);
         left: 32%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2400));
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2600));
     }
+
     .skytrac {
         top: calc(var(--container-width) * 1.84);
-        left: 68%;
+        left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 6000));
     }
+
     .automation {
         top: calc(var(--container-width) * 1.93);
-        left: 50%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
+        left: 30%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1400));
     }
+
+    .rfdesign {
+        top: calc(var(--container-width) * 1.94);
+        left: 65%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
+    }
+
     .solvest {
         top: calc(var(--container-width) * 2.055);
-        left: 35%;
+        left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
     }
+
+    .misumi {
+        top: calc(var(--container-width) * 2.06);
+        left: 65%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
+    }
+
+    .whatif {
+        top: calc(var(--container-width) * 2.23);
+        left: 30%;
+       
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
+    }
     .protospace {
-        top: calc(var(--container-width) * 2.05);
+        top: calc(var(--container-width) * 2.22);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 9000));
     }
-    .whatif {
-        top: calc(var(--container-width) * 2.33);
-        left: 50%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4000));
+    
+    /*
+    Honorable Mentions
+    */
+
+    .eecol {
+        top: calc(var(--container-width) * 2.6);
+        left: 30%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 6000));
     }
+
     .omega {
         top: calc(var(--container-width) * 2.6);
-        left: 50%;
+        left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
-    }
+    } 
+
     .outfrnt {
         top: calc(var(--container-width) * 2.70);
         left: 35%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 7000));
     }
+
     .rockymountain {
         top: calc(var(--container-width) * 2.71);
         left: 66%;
@@ -251,84 +315,127 @@
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
         }
-        /* .ucalgary {
-            top: calc(var(--container-width) * 0.43);
-            left: 35%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
-        }
-        .schulich {
-            top: calc(var(--container-width) * 0.43);
-            left: 60%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
-        } */
+
+        /* 
+        Platinum Tier 
+        */
+
         .yukon {
             top: calc(var(--container-width) * 0.86);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        }
-        /* .avnet {
-            top: calc(var(--container-width) * 0.85);
             left: 70%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        } */
+        }
+
+        .yukonuni {
+            top: calc(var(--container-width) * 0.86);
+            left: 30%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
+        }
+
+        /* 
+        Silver Tier 
+        */
+ 
         .ifm {
             top: calc(var(--container-width) * 1.36);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
         }
+
         .swagelok {
             top: calc(var(--container-width) * 1.3);
             left: 25%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1100));
         }
+
         .phoenix {
             top: calc(var(--container-width) * 1.42);
             left: 35%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1400));
         }
-        /* .eecol {
-            top: calc(var(--container-width) * 1.73);
+
+        /*
+        Copper Tier
+        */
+
+        .cenovus {
+            top: calc(var(--container-width) * 1.74);
             left: 32%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
-        } */
+        }
+
+        .mikroe {
+            top: calc(var(--container-width) * 1.74);
+            left: 65%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
+        }
+
         .labjack {
             top: calc(var(--container-width) * 1.84);
             left: 32%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
         }
+
         .skytrac {
             top: calc(var(--container-width) * 1.84);
             left: 68%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
         }
+
         .automation {
             top: calc(var(--container-width) * 1.93);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 800));
+            left: 31%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1100));
         }
+
+        .rfdesign {
+            top: calc(var(--container-width) * 1.94);
+            left: 68%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
+        }
+
         .solvest {
             top: calc(var(--container-width) * 2.055);
-            left: 35%;
+            left: 30%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
         }
+
+        .misumi {
+            top: calc(var(--container-width) * 2.06);
+            left: 65%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
+        }
+
+        .whatif {
+            top: calc(var(--container-width) * 2.25);
+            left: 31%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+        }
+
         .protospace {
-            top: calc(var(--container-width) * 2.05);
+            top: calc(var(--container-width) * 2.25);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
         }
-        .whatif {
-            top: calc(var(--container-width) * 2.33);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+
+        /*
+        Honorable Mentions
+        */
+
+        .eecol {
+            top: calc(var(--container-width) * 2.6);
+            left: 30%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1600));
         }
+
         .omega {
             top: calc(var(--container-width) * 2.6);
-            left: 50%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+            left:65%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
         }
         .outfrnt {
-            top: calc(var(--container-width) * 2.70);
-            left: 35%;
+            top: calc(var(--container-width) * 2.73);
+            left: 30%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
         }
         .rockymountain {
