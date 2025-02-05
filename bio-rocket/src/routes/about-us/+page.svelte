@@ -5,13 +5,12 @@
     import Ethan from "$lib/assets/ethan.png";
     import Rimoon from "$lib/assets/rimoon.png";
     import Wade from "$lib/assets/wade.png";
-	import Aj from "$lib/assets/aj.png";
     
 </script>
 
 <div class="container mx-auto flex flex-col justify-center items-center overflow-auto">
 	<h1 class="text-center text-3xl sm:text-5xl mt-8 mb-8 text-primary-500">Meet the Visionaries</h1>
-    <div class="w-96 sm:w-full mb-8 text-token grid grid-cols-1 sm:grid-cols-4 gap-4">
+    <div class="w-96 sm:w-full mb-8 text-token grid grid-cols-1 sm:grid-cols-3 gap-4">
 		<div class="card bg-initial card-hover overflow-hidden">
             <div class="mt-4 flex justify-center items-center">
                 <img src={Lukas} alt="Lukas" class="h-64 object-cover object-contain">
@@ -63,25 +62,6 @@
 					<p class="text-center">
 						<!-- cspell:disable -->
 						With 2 years of avionics experience on SOAR, Jesse has developed flight and safety-critical software, excelling in embedded systems, communication, and GUI programming, ensuring performance and reliability.
-						<!-- cspell:enable -->
-					</p>
-				</article>
-			</div>
-			<hr class="opacity-50" />
-		</div>
-        <div class="card bg-initial card-hover overflow-hidden">
-            <div class="mt-4 flex justify-center items-center">
-                <img src={Aj} alt="AJ" class="h-64 object-cover object-contain">
-            </div>
-			<header>
-				<h3 class="h3 mt-4 flex justify-center items-center" data-toc-ignore><strong>AJ</strong></h3>
-                <h4 class="h4 flex justify-center items-center text-primary-500" data-toc-ignore>Sustainability Lead</h4>
-			</header>
-			<div class="p-4 space-y-4">
-				<article>
-					<p class="text-center">
-						<!-- cspell:disable -->
-						With 9 years of experience in the pipeline construction industry, AJ brings a strong background in large-scale infrastructure projects where precision, safety, and teamwork are key. During his year with SOAR airframe, he has further developed his passion for engineering challenges, contributing to advanced systems and collaborative solutions.
 						<!-- cspell:enable -->
 					</p>
 				</article>
