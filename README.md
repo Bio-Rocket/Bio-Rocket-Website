@@ -1,6 +1,6 @@
 # BioRocket
 
-![BioRocket Favicon](bio-rocket\src\lib\assets\biorocket.png)
+![BioRocket Favicon](bio-rocket/src/lib/assets/biorocket.png)
 
 **BioRocket** is a groundbreaking capstone project with several notable distinctions:
 
