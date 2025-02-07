@@ -1,0 +1,9 @@
+[submodule "UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBLibraries"]
+	path = UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBLibraries
+	url = https://github.com/Bio-Rocket/PCBLibraries.git
+[submodule "UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBDesignRules"]
+	path = UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBDesignRules
+	url = https://github.com/Bio-Rocket/PCBDesignRules.git
+[submodule "UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBLayerStackups"]
+	path = UpperPlumbingBayBoardPCB/UpperPlumbingBayBoard/PCBLayerStackups
+	url = https://github.com/Bio-Rocket/PCBLayerStackups.git
