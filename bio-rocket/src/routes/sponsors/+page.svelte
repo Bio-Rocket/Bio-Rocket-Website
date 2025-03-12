@@ -20,11 +20,11 @@
     const Omega = `${base}/dwyeromega.png`
     const Outfrnt = `${base}/outfrnt.png`
     const Rockymountain = `${base}/rockymountain.png`
-    const Swagelok = `${base}/swagelok.png`
     const Cenovus = `${base}/cenovus.png`
     const Mikroe = `${base}/mikroe.png`
     const Rfdesign = `${base}/rfdesign.jpg`
     const Misumi = `${base}/misumi.png`
+    const Aqua = `${base}/aqua.png`
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
@@ -72,15 +72,8 @@
     <a href="https://www.yukonu.ca/" target="_blank">
         <img src={YukonUniversity} alt="YukonUniversity" class="foreground yukonuni" />
     </a>
-    <!-- <a href="https://www.avnet.com/wps/portal/us" target="_blank">
-        <img src={Avnet} alt="Avnet" class="foreground avnet" />
-    </a> -->
     <a href="https://www.ifm.com/ca/en" target="_blank">
         <img src={Ifm} alt="Ifm" class="foreground ifm" />
-    </a>
-    <a href="https://www.swagelok.com/en" target="_blank">
-        <img src={Swagelok} alt="Swagelok" class="foreground
-        swagelok" />
     </a>
     <a href="https://www.eecol.com/ca/en" target="_blank">
         <img src={Eecol} alt="Eecol" class="foreground
@@ -142,6 +135,10 @@
         <img src={Misumi} alt="Misumi" class="foreground
         misumi" />
     </a>
+    <a href="https://www.aquaenvironmentinc.com/" target="_blank">
+        <img src={Aqua} alt="Aqua" class="foreground
+        aqua" />
+    </a>
 
 </div>
 
@@ -199,12 +196,6 @@
         top: calc(var(--container-width) * 1.3);
         left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
-    }
-
-    .swagelok {
-        top: calc(var(--container-width) * 1.3);
-        left: 30%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
     }
 
     .phoenix {
@@ -272,8 +263,14 @@
     }
     .protospace {
         top: calc(var(--container-width) * 2.22);
-        left: 65%;
+        left: 57%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 9000));
+    }
+
+    .aqua {
+        top: calc(var(--container-width) * 2.36);
+        left: 50%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2500));
     }
     
     /*
@@ -340,12 +337,6 @@
             top: calc(var(--container-width) * 1.36);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
-        }
-
-        .swagelok {
-            top: calc(var(--container-width) * 1.3);
-            left: 25%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1100));
         }
 
         .phoenix {
@@ -416,6 +407,12 @@
             top: calc(var(--container-width) * 2.25);
             left: 65%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
+        }
+
+        .aqua {
+            top: calc(var(--container-width) * 2.39);
+            left: 50%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
         }
 
         /*
