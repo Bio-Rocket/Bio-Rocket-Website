@@ -3,7 +3,6 @@
     import { base } from '$app/paths';
     import Sponsors from '$lib/assets/sponsors.svelte';
 
-    const Soar = `${base}/soar.png`
     const Biorocket = `${base}/biorocket.png`
     const Yukon3d = `${base}/yukon3d.png`
     const YukonUniversity = `${base}/yukonuniversity.png`
@@ -25,6 +24,11 @@
     const Rfdesign = `${base}/rfdesign.jpg`
     const Misumi = `${base}/misumi.png`
     const Aqua = `${base}/aqua.png`
+    const Kenesto = `${base}/kenesto.png`
+    const Solidworks = `${base}/solidworks.svg`
+    const Textreme = `${base}/textreme.jpg`
+    const Yukonbuilt = `${base}/yukonbuilt.png`
+    const Mouser = `${base}/mouser.png`
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
@@ -60,9 +64,6 @@
 
 <div class="background">
     <svelte:component this={Sponsors} />
-    <a href="https://www.soar-rockets.ca/" target="_blank">
-        <img src={Soar} alt="Soar" class="foreground soar" />
-    </a>
     <a href="https://www.biorocket.ca/" target="_blank">
         <img src={Biorocket} alt="Biorocket" class="foreground biorocket" />
     </a>
@@ -139,7 +140,26 @@
         <img src={Aqua} alt="Aqua" class="foreground
         aqua" />
     </a>
-
+    <a href="https://www.kenesto.com/" target="_blank">
+        <img src={Kenesto} alt="Kenesto" class="foreground
+        kenesto" />
+    </a>
+    <a href="https://www.solidworks.com/en" target="_blank">
+        <img src={Solidworks} alt="Solidworks" class="foreground
+        solidworks" />
+    </a>
+    <a href="https://www.textreme.com/" target="_blank">
+        <img src={Textreme} alt="Textreme" class="foreground
+        textreme" />
+    </a>
+    <a href="https://www.yukonbuilt.ca/" target="_blank">
+        <img src={Yukonbuilt} alt="Yukonbuilt" class="foreground
+        yukonbuilt" />
+    </a>
+    <a href="https://www.mouser.ca/" target="_blank">
+        <img src={Mouser} alt="Mouser" class="foreground
+        mouser" />
+    </a>
 </div>
 
 <style>
@@ -161,14 +181,9 @@
         position: absolute;
         z-index: 1;
     }
-    .soar {
-        top: calc(var(--container-width) * 0.32);
-        left: 30%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 7000));
-    }
     .biorocket {
         top: calc(var(--container-width) * 0.33);
-        left: 70%;
+        left: 50%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3500));
     }
 
@@ -257,20 +272,38 @@
 
     .whatif {
         top: calc(var(--container-width) * 2.23);
-        left: 30%;
+        left: 23%;
        
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
     }
     .protospace {
         top: calc(var(--container-width) * 2.22);
-        left: 57%;
+        left: 45%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 9000));
     }
 
     .aqua {
         top: calc(var(--container-width) * 2.36);
-        left: 50%;
+        left: 25%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2500));
+    }
+
+    .textreme {
+        top: calc(var(--container-width) * 2.35);
+        left: 60%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+    }
+
+    .yukonbuilt {
+        top: calc(var(--container-width) * 2.25);
+        left: 75%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 800));
+    }
+
+    .mouser {
+        top: calc(var(--container-width) * 2.16);
+        left: 70%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
     }
     
     /*
@@ -301,12 +334,19 @@
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
     }
 
+    .kenesto {
+        top: calc(var(--container-width) * 2.8);
+        left: 35%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4000));
+    }
+
+    .solidworks {
+        top: calc(var(--container-width) * 2.79);
+        left: 70%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 500));
+    }
+
     @media (max-width: 400px) {
-        .soar {
-            top: calc(var(--container-width) * 0.35);
-            left: 30%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
-        }
         .biorocket {
             top: calc(var(--container-width) * 0.36);
             left: 65%;
@@ -398,21 +438,39 @@
         }
 
         .whatif {
-            top: calc(var(--container-width) * 2.25);
-            left: 31%;
-            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+            top: calc(var(--container-width) * 2.24);
+            left: 25%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
         }
 
         .protospace {
-            top: calc(var(--container-width) * 2.25);
-            left: 65%;
+            top: calc(var(--container-width) * 2.24);
+            left: 45%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
         }
 
         .aqua {
-            top: calc(var(--container-width) * 2.39);
-            left: 50%;
+            top: calc(var(--container-width) * 2.38);
+            left: 36%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
+        }
+
+        .textreme {
+            top: calc(var(--container-width) * 2.35);
+            left: 73%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1600));
+        }
+
+        .yukonbuilt {
+            top: calc(var(--container-width) * 2.25);
+            left: 75%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 800));
+        }
+
+        .mouser {
+            top: calc(var(--container-width) * 2.16);
+            left: 70%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
         }
 
         /*
@@ -431,7 +489,7 @@
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1300));
         }
         .outfrnt {
-            top: calc(var(--container-width) * 2.73);
+            top: calc(var(--container-width) * 2.71);
             left: 30%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
         }
@@ -439,6 +497,18 @@
             top: calc(var(--container-width) * 2.71);
             left: 66%;
             transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1000));
+        }
+
+        .kenesto {
+            top: calc(var(--container-width) * 2.82);
+            left: 35%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
+        }
+
+        .solidworks {
+            top: calc(var(--container-width) * 2.79);
+            left: 70%;
+            transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 500));
         }
     }
 </style>

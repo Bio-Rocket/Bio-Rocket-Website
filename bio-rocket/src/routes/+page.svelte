@@ -1,5 +1,4 @@
 <script lang='ts'>
-	import Soar from "$lib/assets/soar.svelte";
 	import Uofc from "$lib/assets/uofc.svelte";
 	import Eng from "$lib/assets/eng.svelte";
 	import Rocket from "$lib/assets/biorocketfull.svelte";
@@ -14,7 +13,6 @@
 		{ label: 'The <strong>fastest</strong> development of a liquid rocket engine in Canada' },
 		{ label: 'The <strong>first</strong> liquid rocket engine designed in Alberta' },
 		{ label: 'Supported by University of Calgary aerospace engineering faculty' },
-		{ label: 'Supported by the University of Calgary’s student rocketry team (SOAR)' },
 	];
 
 	const conicStops: ConicStop[] = [
@@ -64,9 +62,6 @@
 		<div class="flex space-x-4 md:space-x-10 justify-center items-center">
 			<div class="w-20 sm:w-48">
 				<svelte:component this={Uofc} />
-			</div>
-			<div class="w-20 sm:w-48">
-				<svelte:component this={Soar} />
 			</div>
 			<div class="w-20 sm:w-48">
 				<svelte:component this={Eng} />
