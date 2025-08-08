@@ -229,92 +229,92 @@
     */
 
     .cenovus {
-        top: calc(var(--container-width) * 1.74);
+        top: calc(var(--container-width) * 1.72);
         left: 32%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
     }
     .mikroe {
-        top: calc(var(--container-width) * 1.74);
+        top: calc(var(--container-width) * 1.72);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
     }
 
     .labjack {
-        top: calc(var(--container-width) * 1.84);
+        top: calc(var(--container-width) * 1.82);
         left: 32%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2600));
     }
 
     .skytrac {
-        top: calc(var(--container-width) * 1.84);
+        top: calc(var(--container-width) * 1.82);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 6000));
     }
 
     .automation {
-        top: calc(var(--container-width) * 1.93);
+        top: calc(var(--container-width) * 1.91);
         left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1400));
     }
 
     .rfdesign {
-        top: calc(var(--container-width) * 1.94);
+        top: calc(var(--container-width) * 1.93);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
     }
 
     .solvest {
-        top: calc(var(--container-width) * 2.055);
+        top: calc(var(--container-width) * 2.035);
         left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1200));
     }
 
     .misumi {
-        top: calc(var(--container-width) * 2.06);
+        top: calc(var(--container-width) * 2.04);
         left: 65%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
     }
 
     .whatif {
-        top: calc(var(--container-width) * 2.23);
+        top: calc(var(--container-width) * 2.21);
         left: 23%;
        
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 4500));
     }
     .protospace {
-        top: calc(var(--container-width) * 2.22);
+        top: calc(var(--container-width) * 2.20);
         left: 45%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 9000));
     }
 
     .aqua {
-        top: calc(var(--container-width) * 2.36);
+        top: calc(var(--container-width) * 2.34);
         left: 25%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2500));
     }
 
     .textreme {
-        top: calc(var(--container-width) * 2.35);
+        top: calc(var(--container-width) * 2.33);
         left: 60%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1500));
     }
 
     .yukonbuilt {
-        top: calc(var(--container-width) * 2.25);
+        top: calc(var(--container-width) * 2.23);
         left: 75%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 800));
     }
 
     .mouser {
-        top: calc(var(--container-width) * 2.16);
+        top: calc(var(--container-width) * 2.14);
         left: 70%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
     }
 
     .icom {
-        top: calc(var(--container-width) * 2.47);
+        top: calc(var(--container-width) * 2.45);
         left: 72%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2500));
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2800));
     }
     
     /*
