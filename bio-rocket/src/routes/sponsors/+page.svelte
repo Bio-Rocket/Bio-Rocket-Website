@@ -313,8 +313,8 @@
 
     .icom {
         top: calc(var(--container-width) * 2.45);
-        left: 72%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2800));
+        left: 70%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3000));
     }
     
     /*
