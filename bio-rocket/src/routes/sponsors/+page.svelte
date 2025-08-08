@@ -213,7 +213,7 @@
     */
 
     .omega {
-        top: calc(var(--container-width) * 1.35);
+        top: calc(var(--container-width) * 1.33);
         left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
     }
@@ -318,9 +318,9 @@
     }
 
     .icom {
-        top: calc(var(--container-width) * 2.45);
-        left: 70%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3000));
+        top: calc(var(--container-width) * 2.44);
+        left: 65%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 3200));
     }
     
     /*
