@@ -29,6 +29,7 @@
     const Textreme = `${base}/textreme.jpg`
     const Yukonbuilt = `${base}/yukonbuilt.png`
     const Mouser = `${base}/mouser.png`
+    const Icom = `${base}/icom.png`
 
     onMount(() => {
         let containerElement = document.querySelector('.background') as HTMLElement;
@@ -159,6 +160,10 @@
     <a href="https://www.mouser.ca/" target="_blank">
         <img src={Mouser} alt="Mouser" class="foreground
         mouser" />
+    </a>
+    <a href="https://www.icomamerica.com/" target="_blank">
+        <img src={Icom} alt="Icom" class="foreground 
+        icom" />
     </a>
 </div>
 
@@ -303,6 +308,12 @@
     .mouser {
         top: calc(var(--container-width) * 2.16);
         left: 70%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
+    }
+
+    .icom {
+        top: calc(var(--container-width) * 2.45);
+        left: 32%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 1800));
     }
     
