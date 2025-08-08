@@ -212,6 +212,12 @@
     Silver Tier
     */
 
+    .omega {
+        top: calc(var(--container-width) * 1.35);
+        left: 30%;
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
+    }
+
     .ifm {
         top: calc(var(--container-width) * 1.3);
         left: 70%;
@@ -325,12 +331,6 @@
         top: calc(var(--container-width) * 2.6);
         left: 30%;
         transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 6000));
-    }
-
-    .omega {
-        top: calc(var(--container-width) * 2.6);
-        left: 65%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 5000));
     } 
 
     .outfrnt {
