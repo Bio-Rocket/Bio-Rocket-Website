@@ -312,9 +312,9 @@
     }
 
     .icom {
-        top: calc(var(--container-width) * 2.46);
+        top: calc(var(--container-width) * 2.47);
         left: 72%;
-        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2000));
+        transform: translate(-50%, -50%) scale(calc(var(--container-width-unitless) / 2500));
     }
     
     /*
