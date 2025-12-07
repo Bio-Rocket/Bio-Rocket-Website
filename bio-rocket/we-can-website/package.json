@@ -39,6 +39,8 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.39.1",
+		"@skeletonlabs/skeleton": "^4.7.4",
+		"@skeletonlabs/skeleton-svelte": "^4.7.4",
 		"@sveltejs/adapter-vercel": "^6.1.1",
 		"@sveltejs/kit": "^2.48.5",
 		"@sveltejs/package": "^2.5.6",
