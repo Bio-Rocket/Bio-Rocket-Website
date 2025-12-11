@@ -70,6 +70,7 @@
 		"svelte"
 	],
 	"dependencies": {
+		"@lucide/svelte": "^0.556.0",
 		"postgres": "^3.4.7"
 	}
 }
